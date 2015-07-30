@@ -94,11 +94,29 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 1px 0px 0px;
+    border-style: solid none none;
+    border-color: #8f8f8f -moz-use-text-color -moz-use-text-color;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
 }
+/*hr::after{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  content: "";
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background-color: #8B8B8B;
+  transform: rotate(45deg);
+}
+*/
 pre {
   overflow: auto;
 }
