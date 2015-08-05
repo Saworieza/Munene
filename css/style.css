@@ -232,9 +232,20 @@ position: absolute;
 /*--/index-banner-slider--*/
 /*--index-welcome--*/
 .welcome {
-    padding: 4em 0 6em;
+  padding: 4em 0 1em;
   text-align: center;
 }
+.doing{
+    border-top: thin solid black;
+    border-left: thin solid black;
+    border-right: thin solid black;
+  }
+  .doing2{
+    border:thin solid black;
+  }
+  .wel-text h2{
+    margin-top: 1em;
+  }
 .welcome h3 {
   font-family: 'Viga', sans-serif;
   text-align: center;
@@ -818,10 +829,10 @@ h3.typos {
   height:10px;
 }
 ul.service-list li{
-  list-style-type: none;
+  list-style-type: circle;
   float:left;
   text-align: left;
-  padding-left: 1em;
+  margin-left: 1em;
 }
 .grid_4{
   background: #FFF;
@@ -1766,10 +1777,10 @@ div#nivo-lightbox-demo img {
 /*----responsive-menu-start--*/
 @media(max-width:1440px){
 	.navigation {
-	   padding: 2em 0 1.6em 1em;
+	   padding: 2em 0 1.4em 1em;
 	}
 	.slider {
-	  height: 677px;
+	  height: 670px;
 	}
 }
 @media(max-width:1366px){
@@ -1798,7 +1809,7 @@ div#nivo-lightbox-demo img {
 	.slider {
 	  padding: 8% 0 0;
 	  width: 46%;
-	  height: 396px;
+	  height: 390px;
 	}
 	.navigation {
 	   padding: 1.5em 0 1.2em 1em;
@@ -1811,10 +1822,11 @@ div#nivo-lightbox-demo img {
 	  font-size: .95em;
 	  width: 80%;
 	}
-	ul.callbacks_tabs.callbacks1_tabs {
-	  top: 37%;
-	  right: 58px;
-	}
+  ul.callbacks_tabs.callbacks1_tabs {
+    top: 37%;
+    right: 58px;
+  }
+
 	.wel-text p {
 	  font-size: .95em;
 	  padding-top: 0.6em;
@@ -1906,7 +1918,7 @@ div#nivo-lightbox-demo img {
 	}
 	.slider {
 	  width: 60%;
-	  height: 309px;
+	  height: 300px;
 	}
 	.grid figure {
 	  min-width: 342px;
@@ -1941,7 +1953,7 @@ div#nivo-lightbox-demo img {
 	}
 	.wel-img {
 	  padding-left: 2px;
-	  width: 50%;
+	  width: 100%;
 	  float: left;
 	}
 	.wel-text p {
@@ -2019,6 +2031,12 @@ div#nivo-lightbox-demo img {
 	  height: 97.5%;
 	}
 }
+@media(width:360px){
+  .logo {
+    padding: 10px 13px 22px 13px;
+    width: 30%;
+  }
+}
 @media(max-width:768px){
 	.nav > li {
 	  margin: 0 17px 0 !important;
@@ -2027,8 +2045,9 @@ div#nivo-lightbox-demo img {
 	  font-size: 15px;
 	}
 	.logo {
-	padding: 10px 13px 19px 13px;
-	  width: 30%;
+	 padding: 10px 13px  13px;
+   padding-bottom: 2%;
+	 width: 30%;
 	}
 	.navigation {
 	  padding: 30px 0px 27px 10px;
@@ -2046,7 +2065,7 @@ div#nivo-lightbox-demo img {
 	}
 	.slider {
 	  width: 60%;
-	  height: 309px;
+	  height: 307px;
 	}
 	.grid figure {
 	  min-width: 342px;
@@ -2081,7 +2100,7 @@ div#nivo-lightbox-demo img {
 	}
 	.wel-img {
 	  padding-left: 2px;
-	  width: 50%;
+	  width: 100%;
 	  float: left;
 	}
 	.wel-text p {
@@ -2181,7 +2200,8 @@ div#nivo-lightbox-demo img {
 	  border-color: rgba(255, 255, 255, 0) !important;
 	}
 	.rslides h2 {
-	  font-size: 1.6em;
+	  font-size: 1em;
+    font-weight: 600;
 	  width: 79%;
 	  height: 38px;
 	}
@@ -2409,7 +2429,7 @@ div#nivo-lightbox-demo img {
 }
 @media(max-width:320px){
 	.logo {
-	  padding: 12px 5px 19px 9px;
+	  padding: 12px 5px 15px 9px;
 	  width: 46%;
 	}
 	.navigation {
@@ -2461,8 +2481,9 @@ div#nivo-lightbox-demo img {
 	  padding-left: 0px;
 	  width: 100%;
 	  float: none;
+    clear: left;
 	  padding: 0;
-	    margin-bottom: 14px;
+	   margin-bottom: 14px;
 	}
 	.wel-text {
 	  padding: 0;
